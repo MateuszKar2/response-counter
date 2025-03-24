@@ -1,8 +1,15 @@
-import  PropTypes from 'prop-types';
+
+import { FeedbackScores } from '../Statistics/Statistics';
 import css from './FeedbackOptions.module.css';
 import { nanoid } from 'nanoid';
-       
-const getButtonClass = (item) => {
+
+
+type Options = {
+    onLeaveFeedback: (option: keyof FeedbackScores) => void,
+    options: ('good' | 'neutral' | 'bad')[],
+}
+
+const getButtonClass = (item: 'good' | 'neutral' | 'bad'): string => {
     switch(item) {
         case 'good':
             return css.btnGood;
@@ -15,7 +22,7 @@ const getButtonClass = (item) => {
     }
 };
 
-    export const FeedbackOptions = ({onLeaveFeedback, options}) => {
+    export const FeedbackOptions = ({onLeaveFeedback, options}: Options) => {
             return (
                 <ul className={css.buttonsFeedback}>
                     {options.map((option) => (
@@ -27,9 +34,3 @@ const getButtonClass = (item) => {
             );
         };
 
-
-
-FeedbackOptions.propTypes = {
-    onLeaveFeedback: PropTypes.func.isRequired,
-    options: PropTypes.arrayOf(PropTypes.oneOf(['good','neutral','bad'])).isRequired,
-};

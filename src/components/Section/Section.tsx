@@ -1,15 +1,18 @@
-import PropTypes from 'prop-types';
+import { ReactNode } from 'react';
+import { FeedbackScores } from '../Statistics/Statistics';
 import css from './Section.module.css';
 
-export const Section = ({ title, children }) => {
+type TitleProps = {
+    title: string
+    children: React.ReactNode;
+}
+
+
+export const Section = ({ title, children }: TitleProps) => {
     return (
         <section className={css.section}>
         <h2>{title}</h2>
         {children}
         </section>
     );
-};
-
-Section.propTypes = {
-    title: PropTypes.string.isRequired,
 };
