@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/response-counter/static/css/main.5925d617.css",
+    "main.js": "/response-counter/static/js/main.dd7603c5.js",
+    "index.html": "/response-counter/index.html",
+    "main.5925d617.css.map": "/response-counter/static/css/main.5925d617.css.map",
+    "main.dd7603c5.js.map": "/response-counter/static/js/main.dd7603c5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5925d617.css",
+    "static/js/main.dd7603c5.js"
+  ]
+}
