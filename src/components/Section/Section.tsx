@@ -1,5 +1,3 @@
-import { ReactNode } from 'react';
-import { FeedbackScores } from '../Statistics/Statistics';
 import css from './Section.module.css';
 
 type TitleProps = {
