@@ -1,4 +1,4 @@
- 1. **Inicjalizacja TypeScript**
+  1. **Inicjalizacja TypeScript**
    
    Zainstalowano TypeScript i odpowiednie typy dla React.
 
